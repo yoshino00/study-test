@@ -22,3 +22,9 @@ Route::get('/test',function(){
 
 Route::get('/test/test1','App\Http\Controllers\TestController@test1');
 //↑はrepositoryまでのルート
+
+Route::get('/test/test3','App\Http\Controllers\TestController@test3');
+
+Route::get('/test/test4','App\Http\Controllers\TestController@test4');
+
+Route::get('/test/test5','App\Http\Controllers\TestController@test5');
