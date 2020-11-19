@@ -31,3 +31,5 @@ Route::get('/test/test5','App\Http\Controllers\TestController@test5');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('users', 'App\Http\Controllers\UserController');
