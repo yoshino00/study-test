@@ -1,4 +1,4 @@
-@extends('../layouts/test')
+@extends('../layouts/app')
 @section('title', $title)
 @section('content')
     <!-- 個別ページの内容 -->
