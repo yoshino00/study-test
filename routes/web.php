@@ -14,7 +14,7 @@ use App\Http\Controllers;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('top');
 });
 Route::get('/test',function(){
 	return view('test');
@@ -33,3 +33,11 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('/users', 'App\Http\Controllers\UserController');
+
+Route::resource('posts', 'PostController');
+
+
+
+Route::get('/testtest',function(){
+	return view('testtest');
+});
