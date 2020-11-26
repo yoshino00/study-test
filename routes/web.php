@@ -34,7 +34,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('/users', 'App\Http\Controllers\UserController');
 
-Route::resource('posts', 'PostController');
+Route::resource('posts', 'App\Http\Controllers\PostController');
 
 
 
